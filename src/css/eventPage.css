@@ -1,0 +1,21 @@
+.coLeft {
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  z-index: -1;
+  top: 60px;
+}
+.coRight {
+  width: 300px;
+  position: absolute;
+  left: 920px;
+  top: 55px;
+  z-index: -1;
+}
+.suKienNoiBat {
+  position: absolute;
+  width: 400px;
+  z-index: 1;
+  left: 400px;
+  top: 100px;
+}

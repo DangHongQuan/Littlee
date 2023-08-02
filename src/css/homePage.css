@@ -59,6 +59,13 @@
 }
 .balloon-6 {
   position: absolute;
+  z-index: 1;
+  left: 1040px;
+  top: 600px;
+  width: 50px;
+}
+.balloon-9 {
+  position: absolute;
   z-index: -1;
   left: 1100px;
   top: 500px;
@@ -114,4 +121,14 @@
   font-size: 14px;
   justify-content: center;
   text-align: center;
+}
+.input-260 {
+  width: 260px !important;
+  height: 200px !important;
+}
+/* Loại bỏ hiệu ứng nhấn mặc định của nút có class là "no-press-effect" */
+/* ButtonWithoutPressEffect.css */
+.no-press-effect:active {
+  outline: none;
+  box-shadow: none;
 }
