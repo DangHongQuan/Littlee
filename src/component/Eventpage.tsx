@@ -28,7 +28,7 @@ function Eventpage() {
 
                         {/* <image href="/img/Tags.png" x="800" y="30" width="200" height="50" onClick={() => navigate("/")} /> */}
                         <image href="/img/sk.png" x="1050" y="30" width="200" height="50" onClick={() => navigate("/event")} />
-                        <text x="1300" y="62" fill="white" font-size="24">Liên hệ</text>
+                        <text onClick={() => navigate('/contact')} x="1300" y="62" fill="white" font-size="24">Liên hệ</text>
                         <text x="1540" y="55" fill="white" font-size="24">033323232</text>
                         <defs>
                             <filter id="filter0_d_16580_109" x="-35" y="-31" width="1994.5" height="177.816" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

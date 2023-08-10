@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { ThunkDispatch } from "redux-thunk";
 import { fetchEventsData } from '../redux/eventActions';
 import { eventData } from '../redux/data/eventData';
+import { emit } from 'process';
 
 function Detaileventpage() {
 
@@ -22,7 +23,7 @@ function Detaileventpage() {
     }, [dispatch]);
     useEffect(() => {
         const selectedData = data.find((item) => item.name === name);
-        setDataSelect(selectedData || null); 
+        setDataSelect(selectedData || null);
     }, [data, dataSelect]);
     return (
         <>

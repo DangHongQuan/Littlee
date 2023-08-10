@@ -1,0 +1,50 @@
+/* Định dạng cho container chứa hình ảnh */
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Định dạng cho hình ảnh */
+.image {
+  width: 200px; /* Điều chỉnh kích thước hình ảnh tùy ý */
+  height: 150px; /* Điều chỉnh kích thước hình ảnh tùy ý */
+  margin-bottom: 20px; /* Khoảng cách giữa các hình ảnh */
+}
+
+canvas.element.style {
+  height: 4px !important;
+  width: 4px !important;
+}
+.qr-container {
+  width: 100px; /* Đặt chiều rộng bạn muốn */
+  height: 100px; /* Đặt chiều cao bạn muốn */
+}
+.cardQR {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  height: 320px;
+  width: 180px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+
+:where(.css-dev-only-do-not-override-txh9fw).ant-modal .ant-modal-content {
+  position: relative;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: auto;
+  padding: 0px 0px ;
+  width: 0px;
+  justify-content: center;
+  margin-left: 0px;
+}

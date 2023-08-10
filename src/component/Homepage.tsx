@@ -14,13 +14,17 @@ function Homepage() {
     const dispatch: ThunkDispatch<RootState, unknown, AnyAction> = useDispatch();
 
     const handleAddNewtitket = async (values: any) => {
+        try {
+            const actionResult = await dispatch(addNewtitket(values));
+            const newtitketData = unwrapResult(actionResult);
+            message.success('Đặt vé thành công')
+            navigate(`/titket/${values.email}`);
 
-        const actionResult = await dispatch(addNewtitket(values));
-        const newtitketData = unwrapResult(actionResult);
+        }
+        catch {
+            message.error('không được để trống')
+        }
 
-
-
-        navigate(`/titket/${values.email}`);
     };
 
 
@@ -38,7 +42,7 @@ function Homepage() {
                         <image href="/img/logolittle.png" x="200" y="0" width="229" height="91" onClick={() => navigate("/")} />
                         <image href="/img/Tags.png" x="800" y="30" width="200" height="50" onClick={() => navigate("/")} />
                         <text x="1100" y="62" fill="white" font-size="24" onClick={() => navigate("/event")}>Sự kiện</text>
-                        <text x="1300" y="62" fill="white" font-size="24">Liên hệ</text>
+                        <text onClick={() => navigate('/contact')} x="1300" y="62" fill="white" font-size="24">Liên hệ</text>
                         <text x="1540" y="55" fill="white" font-size="24">033323232</text>
                         <defs>
                             <filter id="filter0_d_16580_109" x="-35" y="-31" width="1994.5" height="177.816" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -198,17 +202,20 @@ function Homepage() {
 
                                     </Form.Item>
                                 </div>
-                                <div style={{ position: 'absolute', top: 150, left: -100, color: 'white' }} >
+                                <div style={{ position: 'absolute', top: 150, left: -100, color: 'white', height: 0 }} >
                                     <Form.Item className='input-260' name='email'>
                                         <Input className='input-home' type="text" style={{ width: 260 }} placeholder='Địa chỉ mail ' />
 
                                     </Form.Item>
                                 </div>
                             </div>
-                            <button style={{ boxShadow: 'none', outline: 0, width: 0, height: 0, position: 'absolute', top: 533, left: 793, zIndex: 1, backgroundColor: '#fff6d4', borderColor: '#fff6d4' }}  >
+                            <button style={{
+                                boxShadow: 'none', padding: 0, margin: 0, outline: 0, width: 0, height: 0,
+                                position: 'absolute', top: 534, left: 800, border: 0, zIndex: 1, backgroundColor: '#fff6d4', borderColor: '#fff6d4'
+                            }}  >
 
                                 <img src="/img/red.png" style={{ width: 220 }} />
-                                <img src="/img/datve.png" style={{ width: 100, position: 'absolute', top: 5, left: 60 }} />
+                                <img src="/img/datve.png" style={{ width: 90, position: 'absolute', top: 5, left: 60 }} />
 
                             </button>
                             <div style={{ position: 'absolute', top: 532, left: 800, color: 'white' }} >
