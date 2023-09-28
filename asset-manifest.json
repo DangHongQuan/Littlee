@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Littlee/static/css/main.e8ee07e8.css",
+    "main.js": "/Littlee/static/js/main.dad27b47.js",
+    "static/js/787.78eb9bc7.chunk.js": "/Littlee/static/js/787.78eb9bc7.chunk.js",
+    "index.html": "/Littlee/index.html",
+    "main.e8ee07e8.css.map": "/Littlee/static/css/main.e8ee07e8.css.map",
+    "main.dad27b47.js.map": "/Littlee/static/js/main.dad27b47.js.map",
+    "787.78eb9bc7.chunk.js.map": "/Littlee/static/js/787.78eb9bc7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8ee07e8.css",
+    "static/js/main.dad27b47.js"
+  ]
+}
